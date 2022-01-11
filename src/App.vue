@@ -27,8 +27,8 @@ export default {
 };
 </script>
 
-<style>
-@import '.style/general.scss';
+<style lang="scss">
+@import './style/general.scss';
 
 .comics {
   height: 200px;

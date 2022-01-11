@@ -110,7 +110,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../style/variables'
+@import '../style/variables.scss';
 
 main {
   .jumbotron img {
