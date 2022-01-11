@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  height: 100%;
+}
