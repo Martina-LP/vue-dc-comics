@@ -89,12 +89,13 @@ export default {
 header {
 
   .header-wrapper {
-    height: 120px;
     display: flex;
+    height: 120px;
     justify-content: space-between;
     align-items: center;
 
     .logo {
+      
       img {
         width: 60px;
 

@@ -1,31 +1,36 @@
 <template>
-    <main>
-      <div class="jumbotron">
-        <img src="../assets/img/jumbotron.jpg" alt="Jumbotron">
-      </div>
-      <div class="current-series-section"> 
-        <div class="container current-series-container">
+  <main>
+    <div class="jumbotron">
+      <img src="../assets/img/jumbotron.jpg" alt="Jumbotron">
+    </div>
+    <div class="current-series-section"> 
+      <div class="container current-series-container">
 
-          <button class="current-series-btn">CURRENT SERIES</button>
+        <button class="current-series-btn">CURRENT SERIES</button>
 
-          <div class="row current-series-row">
-            <SecCurrentSeries v-for="currentSerie in currentSeries" :key="currentSerie.serie" :image="currentSerie.thumb" :title="currentSerie.series"/>
+        <div class="row current-series-row">
+          <SecCurrentSeries v-for="currentSerie in currentSeries" :key="currentSerie.serie" :image="currentSerie.thumb" :title="currentSerie.series"/>
 
-          <button class="load-more">LOAD MORE</button>
+        <button class="load-more">LOAD MORE</button>
 
-          </div>
         </div>
       </div>
+    </div>
 
-    </main>
+    <Icons />
+
+  </main>
 </template>
 
 <script>
 import SecCurrentSeries from "./SecCurrentSeries.vue";
+import Icons from "./Icons.vue";
 
 export default {
   components: {
     SecCurrentSeries,
+    Icons
+
   },
 
   data(){
@@ -130,33 +135,33 @@ main {
       position: relative;
 
       .current-series-btn {
-        border: 2px solid $primary_color;
-        background: $primary_color;
-        color: white;
-        padding: 12px 16px; 
-        font-size: 16px;
-        cursor: pointer;
-        font-weight: 600;
         position: absolute;
         top: -22px;
         left: 0;
+        padding: 12px 16px; 
+        background-color: $primary_color;
+        color: white;
+        border: 2px solid $primary_color;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
       }
 
       .current-series-row {
         width: 100%; 
-        padding:  30px 0;
+        padding: 30px 0;
         flex-wrap: wrap;
         justify-content: space-around;
 
         .load-more {
           margin-top: 50px;
-          border: 2px solid $primary_color;
-          background: $primary_color;
+          padding: 12px 70px;
+          background-color: $primary_color;
           color: white;
-          padding: 12px 70px; 
+          border: 2px solid $primary_color; 
           font-size: 16px;
-          cursor: pointer;
           font-weight: 600;
+          cursor: pointer;
         }
       }
     }

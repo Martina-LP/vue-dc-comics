@@ -3,9 +3,8 @@
     <Header />
 
     <main>
-      
+      <Main />
 
-      <Icons />
     </main>
 
     <Footer />
@@ -14,21 +13,27 @@
 
 <script>
 import Header from "./components/Header.vue";
-import Icons from "./components/Icons.vue";
+import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    Icons,
+    Main,
     Footer
+
   },
 };
 </script>
 
 <style lang="scss">
 @import './style/general.scss';
+@import './style/variables.scss';
+
+#app {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
 
 .comics {
   height: 200px;

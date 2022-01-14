@@ -21,16 +21,16 @@ export default {
   padding: 0 5px;
 
   .card-img {
-    height: 160px;
     width: 160px;
+    height: 160px;
     object-fit: cover;
     object-position: top;
   }
 
   .card-title {
     margin-top: 12px;
-    font-size: 12px;
     color: lightgrey;
+    font-size: 12px;
     font-weight: 400;
   }
 }
