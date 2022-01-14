@@ -95,9 +95,9 @@ header {
     align-items: center;
 
     .logo {
-      
+
       img {
-        width: 60px;
+        width: 80px;
 
       }
     }

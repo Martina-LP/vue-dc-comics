@@ -37,6 +37,6 @@ export default {
 
 .comics {
   height: 200px;
-  background-color: black;
+  background-color: $dark;
 }
 </style>

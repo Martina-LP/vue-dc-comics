@@ -128,8 +128,8 @@ main {
   }
 
   .current-series-section {
-    background-color: #1C1C1C;
-    color: white;
+    background-color: $main_bg;
+    color: $light;
 
     .current-series-container {
       position: relative;
@@ -140,7 +140,7 @@ main {
         left: 0;
         padding: 12px 16px; 
         background-color: $primary_color;
-        color: white;
+        color: $light;
         border: 2px solid $primary_color;
         font-size: 16px;
         font-weight: 600;
@@ -157,7 +157,7 @@ main {
           margin-top: 50px;
           padding: 12px 70px;
           background-color: $primary_color;
-          color: white;
+          color: $light;
           border: 2px solid $primary_color; 
           font-size: 16px;
           font-weight: 600;

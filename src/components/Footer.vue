@@ -2,6 +2,7 @@
   <footer>
     <div class="footer-container">
       <div class="container">
+
         <div class="row">
           <div class="link">
             <div class="col">
@@ -57,9 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-banner">
-
-        </div>
+        
       </div>
     </div>
     <div class="footer-banner">
@@ -94,7 +93,7 @@ export default {
 footer {
   .footer-container {
     padding: 30px 0;
-    background-image: url(../assets/img/dc-logo-bg.png) 68% no-repeat, url(../assets/img/footer-bg.jpg) no-repeat;
+    background: url("../assets/img/dc-logo-bg.png") 84% no-repeat, url("../assets/img/footer-bg.jpg") no-repeat;
     background-size: 650px, cover;
 
     .link {
@@ -105,7 +104,7 @@ footer {
         width: 170px;
 
         h3 {
-          color: white;
+          color: $light;
           margin: 20px 0;
           text-transform: uppercase;
         }
@@ -118,12 +117,12 @@ footer {
               margin: 5px 0;
 
               a {
-                font-size: 12 px;
+                font-size: 12px;
                 text-decoration: none;
                 color: #959595;
 
                 &:hover {
-                  color: white;
+                  color: $light;
                 }
               }
             }
@@ -134,15 +133,15 @@ footer {
   }
 
   .footer-banner {
-    background-color: $secondary_color;
+    background-color: $footer_bg;
 
     .row {
       justify-content: space-between;
 
       button {
         border: 2px solid $primary_color;
-        background-color: $secondary_color;
-        color: white;
+        background-color: $footer_bg;
+        color: $light;
         padding: 12px;
         margin: 30px 0;
         font-size: 18px;
@@ -167,4 +166,5 @@ footer {
     }
   }
 }
+
 </style>
